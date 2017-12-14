@@ -7,13 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@class AVCaptureVideoPreviewLayer;
-@class AVCaptureSession;
+#import <AVFoundation/AVFoundation.h>
 
 @interface CapturePreview : UIView
 
 @property (nonatomic, readonly) AVCaptureVideoPreviewLayer *videoPreviewLayer;
-@property (nonatomic) AVCaptureSession *session;
+@property (nonatomic, strong) AVCaptureSession *session;
 
 @end

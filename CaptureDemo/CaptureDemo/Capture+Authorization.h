@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-#import "Capture.h"
+#import <JTCapture/Capture.h>
 
 @interface Capture (Authorization)
 
