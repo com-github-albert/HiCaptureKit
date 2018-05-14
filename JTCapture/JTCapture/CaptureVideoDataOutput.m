@@ -15,14 +15,14 @@
     if (self) {
         [session beginConfiguration];
         
-        /*
-         On iOS, the only supported key is kCVPixelBufferPixelFormatTypeKey. 
-         Supported pixel formats are kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange, kCVPixelFormatType_420YpCbCr8BiPlanarFullRange and kCVPixelFormatType_32BGRA.
-         */
-        [self setVideoSettings:@{(id)kCVPixelBufferPixelFormatTypeKey:[NSNumber numberWithInt:kCVPixelFormatType_32BGRA]}];
-        
         if ([session canAddOutput:self]) {
             [session addOutput:self];
+            
+            /*
+             On iOS, the only supported key is kCVPixelBufferPixelFormatTypeKey. 
+             Supported pixel formats are kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange, kCVPixelFormatType_420YpCbCr8BiPlanarFullRange and kCVPixelFormatType_32BGRA.
+             */
+            [self setVideoSettings:@{(id)kCVPixelBufferPixelFormatTypeKey:[NSNumber numberWithInt:kCVPixelFormatType_32BGRA]}];
         } else {
 #if DEBUG
             NSLog( @"Could not add video device output to the session" );
@@ -31,14 +31,16 @@
             return nil;
         }
         
-        AVCaptureConnection *videoConnection = [self connectionWithMediaType:AVMediaTypeVideo];
-        if ([videoConnection isVideoOrientationSupported]) {
-            videoConnection.videoOrientation = AVCaptureVideoOrientationLandscapeRight;
-        }
-        
         [session commitConfiguration];
     }
     return self;
+}
+
+- (void)setVideoOrientation:(AVCaptureVideoOrientation *)videoOrientation {
+    AVCaptureConnection *videoConnection = [self connectionWithMediaType:AVMediaTypeVideo];
+    if ([videoConnection isVideoOrientationSupported]) {
+        videoConnection.videoOrientation = videoOrientation;
+    }
 }
 
 @end

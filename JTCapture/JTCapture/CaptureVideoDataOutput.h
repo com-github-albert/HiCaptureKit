@@ -10,6 +10,8 @@
 
 @interface CaptureVideoDataOutput : AVCaptureVideoDataOutput
 
+@property (nonatomic, strong) AVCaptureVideoOrientation *videoOrientation;
+
 - (instancetype)initWithSession:(AVCaptureSession *)session;
 
 @end
