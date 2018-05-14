@@ -116,7 +116,7 @@
         if (_position != position) {
             _position = position;
             if ( _setupResult != AVCaptureSetupResultSuccess) return;
-            [self setPosition:position forDeveice:_deviceInput.device];
+            [self setPosition:position];
         }
     });
 }
@@ -170,13 +170,13 @@
     
     NSError *error = nil;
     
-    [ _session beginConfiguration];
-    
     /*
      We do not create an AVCaptureMovieFileOutput when setting up the session because the
      AVCaptureMovieFileOutput does not support movie recording with AVCaptureSessionPresetPhoto.
      */
+    [ _session beginConfiguration];
      _session.sessionPreset =  _sessionPreset;
+    [ _session commitConfiguration];
     
     // Add video input.
     AVCaptureDevice *device;
@@ -199,6 +199,12 @@
         }
     }
     
+    [self addDeviceInputWithDevice:device];
+}
+
+- (void)addDeviceInputWithDevice:(AVCaptureDevice *)device {
+    [ _session beginConfiguration];
+    
     AVCaptureDeviceInput *deviceInput = [AVCaptureDeviceInput deviceInputWithDevice:device error:&error];
     if ( ! deviceInput ) {
 #if DEBUG
@@ -208,6 +214,7 @@
         [ _session commitConfiguration];
         return;
     }
+    
     if ( [ _session canAddInput:deviceInput] ) {
         [ _session addInput:deviceInput];
         _deviceInput = deviceInput;
@@ -267,12 +274,21 @@
     }
 }
 
-- (void)setPosition:(AVCaptureDevicePosition)position forDeveice:(AVCaptureDevice *)device {
-
+- (void)setPosition:(AVCaptureDevicePosition)position {
+    NSArray *availableCameraDevices = [AVCaptureDevice devicesWithMediaType:AVMediaTypeVideo];
+    for (AVCaptureDevice *device in availableCameraDevices) {
+        if ( [device hasMediaType:AVMediaTypeVideo] ) {
+            if (position == device.position) {
+                [_session removeInput:_deviceInput];
+                [self addDeviceInputWithDevice:device];
+            }
+        }
+    }
 }
 
 - (void)setActiveVideoFrame:(NSInteger)activeVideoFrame forDevice:(AVCaptureDevice *)device {
     NSError *error;
+    activeVideoFrame = MAX(0, MIN(60, activeVideoFrame));
     CMTime frameDuration = CMTimeMake(1, (int32_t)activeVideoFrame);
     NSArray *supportedFrameRateRanges = [device.activeFormat videoSupportedFrameRateRanges];
     BOOL frameRateSupported = NO;
