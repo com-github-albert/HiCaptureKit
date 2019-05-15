@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B9A851D222D17B6000EF524 /* HiCaptureKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B9A8513222D17B6000EF524 /* HiCaptureKit.framework */; };
+		6B9A8522222D17B6000EF524 /* HiCaptureKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9A8521222D17B6000EF524 /* HiCaptureKitTests.m */; };
+		6B9A8524222D17B6000EF524 /* HiCaptureKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B9A8516222D17B6000EF524 /* HiCaptureKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B9A8567222D18E1000EF524 /* HiCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9A855B222D18E0000EF524 /* HiCapture.m */; };
+		6B9A8568222D18E1000EF524 /* HiCaptureView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B9A855C222D18E0000EF524 /* HiCaptureView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B9A8569222D18E1000EF524 /* HiCaptureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9A855D222D18E0000EF524 /* HiCaptureView.m */; };
+		6B9A856C222D18E1000EF524 /* HiCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B9A8560222D18E1000EF524 /* HiCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B9A856D222D18E1000EF524 /* HiCapturePreview.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B9A8561222D18E1000EF524 /* HiCapturePreview.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B9A856E222D18E1000EF524 /* HiCaptureAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9A8562222D18E1000EF524 /* HiCaptureAuthorization.m */; };
+		6B9A856F222D18E1000EF524 /* HiCaptureAuthorization.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B9A8563222D18E1000EF524 /* HiCaptureAuthorization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B9A8570222D18E1000EF524 /* HiCapturePreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B9A8564222D18E1000EF524 /* HiCapturePreview.m */; };
+		6BD4C4DB222E420300C29FB8 /* HiCaptureError.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD4C4D9222E420200C29FB8 /* HiCaptureError.h */; };
+		6BD4C4DC222E420300C29FB8 /* HiCaptureError.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD4C4DA222E420200C29FB8 /* HiCaptureError.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B9A851E222D17B6000EF524 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B9A850A222D17B6000EF524 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B9A8512222D17B6000EF524;
+			remoteInfo = HiCaptureKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6B9A8513222D17B6000EF524 /* HiCaptureKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HiCaptureKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B9A8516222D17B6000EF524 /* HiCaptureKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HiCaptureKit.h; sourceTree = "<group>"; };
+		6B9A8517222D17B6000EF524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B9A851C222D17B6000EF524 /* HiCaptureKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiCaptureKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B9A8521222D17B6000EF524 /* HiCaptureKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HiCaptureKitTests.m; sourceTree = "<group>"; };
+		6B9A8523222D17B6000EF524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B9A855B222D18E0000EF524 /* HiCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HiCapture.m; sourceTree = "<group>"; };
+		6B9A855C222D18E0000EF524 /* HiCaptureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HiCaptureView.h; sourceTree = "<group>"; };
+		6B9A855D222D18E0000EF524 /* HiCaptureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HiCaptureView.m; sourceTree = "<group>"; };
+		6B9A8560222D18E1000EF524 /* HiCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HiCapture.h; sourceTree = "<group>"; };
+		6B9A8561222D18E1000EF524 /* HiCapturePreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HiCapturePreview.h; sourceTree = "<group>"; };
+		6B9A8562222D18E1000EF524 /* HiCaptureAuthorization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HiCaptureAuthorization.m; sourceTree = "<group>"; };
+		6B9A8563222D18E1000EF524 /* HiCaptureAuthorization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HiCaptureAuthorization.h; sourceTree = "<group>"; };
+		6B9A8564222D18E1000EF524 /* HiCapturePreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HiCapturePreview.m; sourceTree = "<group>"; };
+		6BD4C4D9222E420200C29FB8 /* HiCaptureError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HiCaptureError.h; sourceTree = "<group>"; };
+		6BD4C4DA222E420200C29FB8 /* HiCaptureError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HiCaptureError.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B9A8510222D17B6000EF524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B9A8519222D17B6000EF524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B9A851D222D17B6000EF524 /* HiCaptureKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B9A8509222D17B6000EF524 = {
+			isa = PBXGroup;
+			children = (
+				6B9A852D222D185F000EF524 /* Source */,
+				6B9A8515222D17B6000EF524 /* Resources */,
+				6B9A8520222D17B6000EF524 /* HiCaptureKitTests */,
+				6B9A8514222D17B6000EF524 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B9A8514222D17B6000EF524 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B9A8513222D17B6000EF524 /* HiCaptureKit.framework */,
+				6B9A851C222D17B6000EF524 /* HiCaptureKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B9A8515222D17B6000EF524 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6B9A8517222D17B6000EF524 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6B9A8520222D17B6000EF524 /* HiCaptureKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				6B9A8521222D17B6000EF524 /* HiCaptureKitTests.m */,
+				6B9A8523222D17B6000EF524 /* Info.plist */,
+			);
+			path = HiCaptureKitTests;
+			sourceTree = "<group>";
+		};
+		6B9A852D222D185F000EF524 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6B9A8516222D17B6000EF524 /* HiCaptureKit.h */,
+				6B9A8560222D18E1000EF524 /* HiCapture.h */,
+				6B9A855B222D18E0000EF524 /* HiCapture.m */,
+				6B9A855C222D18E0000EF524 /* HiCaptureView.h */,
+				6B9A855D222D18E0000EF524 /* HiCaptureView.m */,
+				6B9A8561222D18E1000EF524 /* HiCapturePreview.h */,
+				6B9A8564222D18E1000EF524 /* HiCapturePreview.m */,
+				6B9A8563222D18E1000EF524 /* HiCaptureAuthorization.h */,
+				6B9A8562222D18E1000EF524 /* HiCaptureAuthorization.m */,
+				6BD4C4D9222E420200C29FB8 /* HiCaptureError.h */,
+				6BD4C4DA222E420200C29FB8 /* HiCaptureError.m */,
+			);
+			name = Source;
+			path = ../Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6B9A850E222D17B6000EF524 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B9A856D222D18E1000EF524 /* HiCapturePreview.h in Headers */,
+				6B9A8568222D18E1000EF524 /* HiCaptureView.h in Headers */,
+				6B9A8524222D17B6000EF524 /* HiCaptureKit.h in Headers */,
+				6B9A856F222D18E1000EF524 /* HiCaptureAuthorization.h in Headers */,
+				6BD4C4DB222E420300C29FB8 /* HiCaptureError.h in Headers */,
+				6B9A856C222D18E1000EF524 /* HiCapture.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6B9A8512222D17B6000EF524 /* HiCaptureKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B9A8527222D17B6000EF524 /* Build configuration list for PBXNativeTarget "HiCaptureKit" */;
+			buildPhases = (
+				6B9A850E222D17B6000EF524 /* Headers */,
+				6B9A850F222D17B6000EF524 /* Sources */,
+				6B9A8510222D17B6000EF524 /* Frameworks */,
+				6B9A8511222D17B6000EF524 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HiCaptureKit;
+			productName = HiCaptureKit;
+			productReference = 6B9A8513222D17B6000EF524 /* HiCaptureKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6B9A851B222D17B6000EF524 /* HiCaptureKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B9A852A222D17B6000EF524 /* Build configuration list for PBXNativeTarget "HiCaptureKitTests" */;
+			buildPhases = (
+				6B9A8518222D17B6000EF524 /* Sources */,
+				6B9A8519222D17B6000EF524 /* Frameworks */,
+				6B9A851A222D17B6000EF524 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B9A851F222D17B6000EF524 /* PBXTargetDependency */,
+			);
+			name = HiCaptureKitTests;
+			productName = HiCaptureKitTests;
+			productReference = 6B9A851C222D17B6000EF524 /* HiCaptureKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B9A850A222D17B6000EF524 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = mutating;
+				TargetAttributes = {
+					6B9A8512222D17B6000EF524 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					6B9A851B222D17B6000EF524 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 6B9A850D222D17B6000EF524 /* Build configuration list for PBXProject "HiCaptureKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6B9A8509222D17B6000EF524;
+			productRefGroup = 6B9A8514222D17B6000EF524 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B9A8512222D17B6000EF524 /* HiCaptureKit */,
+				6B9A851B222D17B6000EF524 /* HiCaptureKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B9A8511222D17B6000EF524 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B9A851A222D17B6000EF524 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B9A850F222D17B6000EF524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BD4C4DC222E420300C29FB8 /* HiCaptureError.m in Sources */,
+				6B9A856E222D18E1000EF524 /* HiCaptureAuthorization.m in Sources */,
+				6B9A8570222D18E1000EF524 /* HiCapturePreview.m in Sources */,
+				6B9A8569222D18E1000EF524 /* HiCaptureView.m in Sources */,
+				6B9A8567222D18E1000EF524 /* HiCapture.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B9A8518222D17B6000EF524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B9A8522222D17B6000EF524 /* HiCaptureKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B9A851F222D17B6000EF524 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B9A8512222D17B6000EF524 /* HiCaptureKit */;
+			targetProxy = 6B9A851E222D17B6000EF524 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6B9A8525222D17B6000EF524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6B9A8526222D17B6000EF524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6B9A8528222D17B6000EF524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = C94329WK33;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mutating.HiCaptureKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B9A8529222D17B6000EF524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = C94329WK33;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mutating.HiCaptureKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6B9A852B222D17B6000EF524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Q2JNSZV5H;
+				INFOPLIST_FILE = HiCaptureKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mutating.HiCaptureKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B9A852C222D17B6000EF524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Q2JNSZV5H;
+				INFOPLIST_FILE = HiCaptureKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mutating.HiCaptureKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B9A850D222D17B6000EF524 /* Build configuration list for PBXProject "HiCaptureKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B9A8525222D17B6000EF524 /* Debug */,
+				6B9A8526222D17B6000EF524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B9A8527222D17B6000EF524 /* Build configuration list for PBXNativeTarget "HiCaptureKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B9A8528222D17B6000EF524 /* Debug */,
+				6B9A8529222D17B6000EF524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B9A852A222D17B6000EF524 /* Build configuration list for PBXNativeTarget "HiCaptureKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B9A852B222D17B6000EF524 /* Debug */,
+				6B9A852C222D17B6000EF524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B9A850A222D17B6000EF524 /* Project object */;
+}

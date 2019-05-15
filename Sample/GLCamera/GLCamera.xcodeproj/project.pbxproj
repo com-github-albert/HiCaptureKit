@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B1BF90C2230C8B300DE844D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1BF90B2230C8B300DE844D /* AppDelegate.m */; };
+		6B1BF90F2230C8B300DE844D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1BF90E2230C8B300DE844D /* ViewController.m */; };
+		6B1BF9122230C8B300DE844D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B1BF9102230C8B300DE844D /* Main.storyboard */; };
+		6B1BF9142230C8B500DE844D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B1BF9132230C8B500DE844D /* Assets.xcassets */; };
+		6B1BF9172230C8B500DE844D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B1BF9152230C8B500DE844D /* LaunchScreen.storyboard */; };
+		6B1BF91A2230C8B500DE844D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1BF9192230C8B500DE844D /* main.m */; };
+		6B1BF92C2230C90700DE844D /* GLTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1BF9252230C90700DE844D /* GLTexture.m */; };
+		6B1BF92D2230C90700DE844D /* GLCameraTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1BF9272230C90700DE844D /* GLCameraTexture.m */; };
+		6B1BF92E2230C90700DE844D /* GLPanelTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1BF9282230C90700DE844D /* GLPanelTexture.m */; };
+		6B1BF92F2230C90700DE844D /* GLImageTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1BF9292230C90700DE844D /* GLImageTexture.m */; };
+		6B1BF9302230C90700DE844D /* GLVideoTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1BF92A2230C90700DE844D /* GLVideoTexture.m */; };
+		6B1BF93A2230C9ED00DE844D /* HiCaptureKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1BF9372230C9E300DE844D /* HiCaptureKit.framework */; };
+		6B1BF93B2230C9ED00DE844D /* HiCaptureKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1BF9372230C9E300DE844D /* HiCaptureKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6B1BF9412230CA4F00DE844D /* GLCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1BF9402230CA4F00DE844D /* GLCameraViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B1BF9362230C9E300DE844D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B1BF9312230C9E300DE844D /* HiCaptureKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6B9A8513222D17B6000EF524;
+			remoteInfo = HiCaptureKit;
+		};
+		6B1BF9382230C9E300DE844D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B1BF9312230C9E300DE844D /* HiCaptureKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6B9A851C222D17B6000EF524;
+			remoteInfo = HiCaptureKitTests;
+		};
+		6B1BF93C2230C9ED00DE844D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B1BF9312230C9E300DE844D /* HiCaptureKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B9A8512222D17B6000EF524;
+			remoteInfo = HiCaptureKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6B1BF93E2230C9ED00DE844D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6B1BF93B2230C9ED00DE844D /* HiCaptureKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6B1BF9072230C8B300DE844D /* GLCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B1BF90A2230C8B300DE844D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6B1BF90B2230C8B300DE844D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6B1BF90D2230C8B300DE844D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6B1BF90E2230C8B300DE844D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6B1BF9112230C8B300DE844D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6B1BF9132230C8B500DE844D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B1BF9162230C8B500DE844D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6B1BF9182230C8B500DE844D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B1BF9192230C8B500DE844D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6B1BF9222230C90700DE844D /* GLCameraTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCameraTexture.h; sourceTree = "<group>"; };
+		6B1BF9232230C90700DE844D /* GLPanelTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLPanelTexture.h; sourceTree = "<group>"; };
+		6B1BF9242230C90700DE844D /* GLImageTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLImageTexture.h; sourceTree = "<group>"; };
+		6B1BF9252230C90700DE844D /* GLTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLTexture.m; sourceTree = "<group>"; };
+		6B1BF9262230C90700DE844D /* GLVideoTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLVideoTexture.h; sourceTree = "<group>"; };
+		6B1BF9272230C90700DE844D /* GLCameraTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLCameraTexture.m; sourceTree = "<group>"; };
+		6B1BF9282230C90700DE844D /* GLPanelTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLPanelTexture.m; sourceTree = "<group>"; };
+		6B1BF9292230C90700DE844D /* GLImageTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLImageTexture.m; sourceTree = "<group>"; };
+		6B1BF92A2230C90700DE844D /* GLVideoTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLVideoTexture.m; sourceTree = "<group>"; };
+		6B1BF92B2230C90700DE844D /* GLTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTexture.h; sourceTree = "<group>"; };
+		6B1BF9312230C9E300DE844D /* HiCaptureKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HiCaptureKit.xcodeproj; path = ../../Framework/HiCaptureKit.xcodeproj; sourceTree = "<group>"; };
+		6B1BF93F2230CA4F00DE844D /* GLCameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLCameraViewController.h; sourceTree = "<group>"; };
+		6B1BF9402230CA4F00DE844D /* GLCameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLCameraViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B1BF9042230C8B300DE844D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B1BF93A2230C9ED00DE844D /* HiCaptureKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B1BF8FE2230C8B300DE844D = {
+			isa = PBXGroup;
+			children = (
+				6B1BF9312230C9E300DE844D /* HiCaptureKit.xcodeproj */,
+				6B1BF9202230C90700DE844D /* GLRenderer */,
+				6B1BF9092230C8B300DE844D /* GLCamera */,
+				6B1BF9082230C8B300DE844D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B1BF9082230C8B300DE844D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B1BF9072230C8B300DE844D /* GLCamera.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B1BF9092230C8B300DE844D /* GLCamera */ = {
+			isa = PBXGroup;
+			children = (
+				6B1BF90A2230C8B300DE844D /* AppDelegate.h */,
+				6B1BF90B2230C8B300DE844D /* AppDelegate.m */,
+				6B1BF90D2230C8B300DE844D /* ViewController.h */,
+				6B1BF90E2230C8B300DE844D /* ViewController.m */,
+				6B1BF93F2230CA4F00DE844D /* GLCameraViewController.h */,
+				6B1BF9402230CA4F00DE844D /* GLCameraViewController.m */,
+				6B1BF9102230C8B300DE844D /* Main.storyboard */,
+				6B1BF9132230C8B500DE844D /* Assets.xcassets */,
+				6B1BF9152230C8B500DE844D /* LaunchScreen.storyboard */,
+				6B1BF9182230C8B500DE844D /* Info.plist */,
+				6B1BF9192230C8B500DE844D /* main.m */,
+			);
+			path = GLCamera;
+			sourceTree = "<group>";
+		};
+		6B1BF9202230C90700DE844D /* GLRenderer */ = {
+			isa = PBXGroup;
+			children = (
+				6B1BF9212230C90700DE844D /* GLTexture */,
+			);
+			path = GLRenderer;
+			sourceTree = "<group>";
+		};
+		6B1BF9212230C90700DE844D /* GLTexture */ = {
+			isa = PBXGroup;
+			children = (
+				6B1BF92B2230C90700DE844D /* GLTexture.h */,
+				6B1BF9252230C90700DE844D /* GLTexture.m */,
+				6B1BF9242230C90700DE844D /* GLImageTexture.h */,
+				6B1BF9292230C90700DE844D /* GLImageTexture.m */,
+				6B1BF9232230C90700DE844D /* GLPanelTexture.h */,
+				6B1BF9282230C90700DE844D /* GLPanelTexture.m */,
+				6B1BF9262230C90700DE844D /* GLVideoTexture.h */,
+				6B1BF92A2230C90700DE844D /* GLVideoTexture.m */,
+				6B1BF9222230C90700DE844D /* GLCameraTexture.h */,
+				6B1BF9272230C90700DE844D /* GLCameraTexture.m */,
+			);
+			path = GLTexture;
+			sourceTree = "<group>";
+		};
+		6B1BF9322230C9E300DE844D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B1BF9372230C9E300DE844D /* HiCaptureKit.framework */,
+				6B1BF9392230C9E300DE844D /* HiCaptureKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B1BF9062230C8B300DE844D /* GLCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B1BF91D2230C8B500DE844D /* Build configuration list for PBXNativeTarget "GLCamera" */;
+			buildPhases = (
+				6B1BF9032230C8B300DE844D /* Sources */,
+				6B1BF9042230C8B300DE844D /* Frameworks */,
+				6B1BF9052230C8B300DE844D /* Resources */,
+				6B1BF93E2230C9ED00DE844D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B1BF93D2230C9ED00DE844D /* PBXTargetDependency */,
+			);
+			name = GLCamera;
+			productName = GLCamera;
+			productReference = 6B1BF9072230C8B300DE844D /* GLCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B1BF8FF2230C8B300DE844D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = mutating;
+				TargetAttributes = {
+					6B1BF9062230C8B300DE844D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 6B1BF9022230C8B300DE844D /* Build configuration list for PBXProject "GLCamera" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B1BF8FE2230C8B300DE844D;
+			productRefGroup = 6B1BF9082230C8B300DE844D /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6B1BF9322230C9E300DE844D /* Products */;
+					ProjectRef = 6B1BF9312230C9E300DE844D /* HiCaptureKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				6B1BF9062230C8B300DE844D /* GLCamera */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6B1BF9372230C9E300DE844D /* HiCaptureKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = HiCaptureKit.framework;
+			remoteRef = 6B1BF9362230C9E300DE844D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6B1BF9392230C9E300DE844D /* HiCaptureKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = HiCaptureKitTests.xctest;
+			remoteRef = 6B1BF9382230C9E300DE844D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B1BF9052230C8B300DE844D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B1BF9172230C8B500DE844D /* LaunchScreen.storyboard in Resources */,
+				6B1BF9142230C8B500DE844D /* Assets.xcassets in Resources */,
+				6B1BF9122230C8B300DE844D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B1BF9032230C8B300DE844D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B1BF90F2230C8B300DE844D /* ViewController.m in Sources */,
+				6B1BF92F2230C90700DE844D /* GLImageTexture.m in Sources */,
+				6B1BF92E2230C90700DE844D /* GLPanelTexture.m in Sources */,
+				6B1BF91A2230C8B500DE844D /* main.m in Sources */,
+				6B1BF9412230CA4F00DE844D /* GLCameraViewController.m in Sources */,
+				6B1BF92C2230C90700DE844D /* GLTexture.m in Sources */,
+				6B1BF90C2230C8B300DE844D /* AppDelegate.m in Sources */,
+				6B1BF9302230C90700DE844D /* GLVideoTexture.m in Sources */,
+				6B1BF92D2230C90700DE844D /* GLCameraTexture.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B1BF93D2230C9ED00DE844D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HiCaptureKit;
+			targetProxy = 6B1BF93C2230C9ED00DE844D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6B1BF9102230C8B300DE844D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B1BF9112230C8B300DE844D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6B1BF9152230C8B500DE844D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B1BF9162230C8B500DE844D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B1BF91B2230C8B500DE844D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6B1BF91C2230C8B500DE844D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B1BF91E2230C8B500DE844D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Q2JNSZV5H;
+				INFOPLIST_FILE = GLCamera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mutating.sample.GLCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B1BF91F2230C8B500DE844D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Q2JNSZV5H;
+				INFOPLIST_FILE = GLCamera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mutating.sample.GLCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B1BF9022230C8B300DE844D /* Build configuration list for PBXProject "GLCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B1BF91B2230C8B500DE844D /* Debug */,
+				6B1BF91C2230C8B500DE844D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B1BF91D2230C8B500DE844D /* Build configuration list for PBXNativeTarget "GLCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B1BF91E2230C8B500DE844D /* Debug */,
+				6B1BF91F2230C8B500DE844D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B1BF8FF2230C8B300DE844D /* Project object */;
+}
